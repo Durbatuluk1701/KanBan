@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    background-color: #9cfffa;
+}
+
+#content-area {
+    display: flex;
+    height: auto;
+}
+
+#page-title {
+    text-align: center;
+    min-height: 2.5rem;
+    height: auto;
+}
+
+.board {
+    width: 20%;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.board h2 {
+    margin: 5px 0;
+    text-align: center;
+    min-height: 1rem;
+    height: auto;
+}
+
+.board-box {
+    height: auto;
+    min-height: 40px;
+    outline: 1px solid black;
+}
+
+.task {
+    height: 40px;
+    margin: 5px;
+    border: 1px dashed grey;
+}
+
+.task-header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.task-header h3 {
+    text-align: center;
+    margin: 0 5px;
+    width: 60%;
+    border: 0.5px dashed cornflowerblue;
+}
+
+.task-header button {
+    width: 20%;
+    padding: 0px;
+    border-width: 0px;
+    text-align: center;
+}
