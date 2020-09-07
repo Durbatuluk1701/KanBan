@@ -3,10 +3,44 @@
 
 <head>
     <title>KanBan Board</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>KanBan Board</h1>
+    <script src="script.js"></script>
+    <button onclick="createTask()">Task Button</button>
+    <h1 id="page-title">KanBan Board</h1>
+    <div id="content-area">
+        <div id="backlog" class="board">
+            <h2>Backlog</h2>
+            <div class="board-box">
+                <div class="task">
+                    <div class="task-header">
+                        <button><b>Left</b></button>
+                        <h3>Finish This</h3>
+                        <button><b>Right</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dev" class="board">
+            <h2>Development</h2>
+            <div class="board-box"></div>
+        </div>
+        <div id="progress" class="board">
+            <h2>In-Progress</h2>
+            <div class="board-box"></div>
+        </div>
+        <div id="test" class="board">
+            <h2>Testing</h2>
+            <div class="board-box"></div>
+        </div>
+        <div id="complete" class="board">
+            <h2>Complete</h2>
+            <div class="board-box"></div>
+        </div>
+
+    </div>
 </body>
 
 </html>
