@@ -8,19 +8,13 @@
 
 <body>
     <script src="script.js"></script>
-    <button onclick="createTask()">Task Button</button>
     <h1 id="page-title">KanBan Board</h1>
+    <button onclick="createTask()">New Task</button>
+    <button onclick="saveTasks()">Save</button>
     <div id="content-area">
         <div id="backlog" class="board">
             <h2>Backlog</h2>
             <div class="board-box">
-                <div class="task">
-                    <div class="task-header">
-                        <button onclick="moveLeft(this)"><b>Left</b></button>
-                        <h3>Finish This</h3>
-                        <button onclick="moveRight(this)"><b>Right</b></button>
-                    </div>
-                </div>
             </div>
         </div>
         <div id="dev" class="board">
@@ -41,6 +35,7 @@
         </div>
 
     </div>
+    <p id="example"></p>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "kanban",
+  "version": "1.0.0",
+  "description": "KanBan Board",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Durbatuluk1701/KanBan.git"
+  },
+  "author": "Durbatuluk1701",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Durbatuluk1701/KanBan/issues"
+  },
+  "homepage": "https://github.com/Durbatuluk1701/KanBan#readme"
+}

@@ -5,7 +5,7 @@ const createTask = () => {
     <div class="task">
         <div class="task-header">
             <button onclick="moveLeft(this)"><b>Left</b></button>
-            <h3>Finish This</h3>
+            <input type="textbox" onblur="blurredField(this)"></input>
             <button onclick="moveRight(this)"><b>Right</b></button>
         </div>
     </div>
@@ -56,4 +56,9 @@ const moveLeft = (buttonName) => {
     let currentBoxHtml = currentBoxElem.innerHTML;
     currentBoxElem.innerHTML = currentBoxHtml.replace(task, "");;
     appendTaskHtml(leftColumns[currentBox], task);
+}
+
+const blurredField = (input) => {
+    let inputValue = input.value;
+    input.outerHTML = `<h3>${inputValue}</h3>`;
 }
