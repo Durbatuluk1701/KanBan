@@ -62,17 +62,3 @@ const blurredField = (input) => {
     let inputValue = input.value;
     input.outerHTML = `<h3>${inputValue}</h3>`;
 }
-
-const saveTasks = () => {
-    console.error("Not Implemented");
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = () => {
-        if (xhttp.readyState === 4 && xhttp.status <= 400) {
-            console.log("Completed");
-            console.log(xhttp);
-            document.querySelector("#example").innerText = xhttp.responseText;
-        }
-    }
-    xhttp.open("GET", "saveInfo.php", true);
-    xhttp.send();
-}
